@@ -24,6 +24,12 @@
     margin-bottom: 2rem;
 }
 
+.text-light-gray {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #727272;
+}
+
 /* ------header styles------ */
 .header {
     background: rgba(255, 144, 14, 0.10);
@@ -141,6 +147,21 @@ main {
     margin: 1.5rem auto;
 }
 
+/* ----------main feature section styles----- */
+.features {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+}
+
+.feature-content .card {
+    padding: 30px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
 /* -------facts section styles------ */
 .facts>p {
     font-size: 1rem;
@@ -152,6 +173,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .facts-card-container .card {
@@ -161,16 +183,38 @@ main {
     padding: 30px;
 }
 
-.card .card-stat {
+.facts-card-container .card .card-stat {
     font-size: 2.8rem;
     font-weight: 600;
     color: #424242;
 }
 
-.card .card-title {
+.facts-card-container .card .card-title {
     font-size: 1.2rem;
     font-weight: 600;
     color: #727272;
+}
+
+/* -------sponsor section styles------ */
+.sponsors {
+    text-align: center;
+}
+
+.sponsors>p {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.sponsors-img-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sponsors-img-container img {
+    width: 10%;
 }
 
 /* Respponsive styles & media kuerys */
@@ -193,6 +237,15 @@ main {
 
     .team-img-container {
         grid-template-columns: 1fr;
+    }
+
+    .facts {
+        margin: 0 20px;
+    }
+
+    .facts-card-container {
+        flex-direction: column;
+        gap: 30px;
     }
 }
 
