@@ -253,6 +253,20 @@ main {
     width: 10%;
 }
 
+/* ------footer styles----- */
+footer {
+    max-height: 300px;
+}
+
+.footer-container {
+    border-radius: 8px;
+    background: #FFF4E7;
+    width: 80%;
+    margin: 50px auto 80px auto;
+    padding: 2rem;
+    text-align: center;
+}
+
 /* Respponsive styles & media kuerys */
 /* ------mobile device---- */
 @media screen and (max-width:576px) {
